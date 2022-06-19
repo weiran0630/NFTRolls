@@ -102,7 +102,7 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 					h={330}
 					backgroundColor='#b6b6b6'
 					backgroundImage={
-						isMinted ? imageURI : 'assets/images/placeholder.png'
+						isMinted ? imageURI : '/images/placeholder.png'
 					}
 					bgPosition='center'
 					bgSize='cover'
