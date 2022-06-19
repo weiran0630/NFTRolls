@@ -74,9 +74,14 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 				isClosable: true,
 			});
 		} catch (error: any) {
+			const errorMsg = error.message as string;
+			const description = errorMsg.includes('NFT already minted!')
+				? 'NFT已被鍛造！'
+				: '您的錢包餘額不足！';
+
 			toast({
 				title: '發生錯誤',
-				description: '您的錢包餘額不足或NFT已被鍛造！',
+				description,
 				status: 'error',
 				duration: 9000,
 				isClosable: true,
@@ -101,9 +106,7 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 					w={330}
 					h={330}
 					backgroundColor='#b6b6b6'
-					backgroundImage={
-						isMinted ? imageURI : '/images/placeholder.png'
-					}
+					backgroundImage={isMinted ? imageURI : '/images/placeholder.png'}
 					bgPosition='center'
 					bgSize='cover'
 					bgRepeat='no-repeat'
