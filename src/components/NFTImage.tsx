@@ -25,8 +25,9 @@ interface NFTImageProps {
 export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 	// pinata cid
 	const contentId = import.meta.env.VITE_CONTENT_ID;
+	const fileExtension = import.meta.env.VITE_FILE_EXTENSION;
 	const metadataURI = `${contentId}/${tokenId}.json`;
-	const imageURI = `https://gateway.pinata.cloud/ipfs/${contentId}/${tokenId}.webp`;
+	const imageURI = `https://gateway.pinata.cloud/ipfs/${contentId}/${tokenId}.${fileExtension}`;
 
 	const [isMinted, setIsMinted] = useState<boolean>(false);
 	const [isProcessing, setIsProcessing] = useState<boolean>(false);
