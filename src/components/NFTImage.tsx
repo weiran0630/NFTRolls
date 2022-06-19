@@ -27,7 +27,7 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 	const contentId = import.meta.env.VITE_CONTENT_ID;
 	const fileExtension = import.meta.env.VITE_FILE_EXTENSION;
 	const metadataURI = `${contentId}/${tokenId}.json`;
-	const imageURI = `https://gateway.pinata.cloud/ipfs/${contentId}/${tokenId}.${fileExtension}`;
+	const imageURI = `/images/ricks/${tokenId}.${fileExtension}`;
 
 	const [isMinted, setIsMinted] = useState<boolean>(false);
 	const [isProcessing, setIsProcessing] = useState<boolean>(false);
