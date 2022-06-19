@@ -61,7 +61,7 @@ export default function Home() {
 					{Array(totalMinted + 1)
 						.fill(0)
 						.map((_, i) => (
-							<NFTImage key={i + 1} tokenId={i + 1} getCount={getCount} />
+							<NFTImage key={i} tokenId={i} getCount={getCount} />
 						))}
 				</Center>
 			</Container>
