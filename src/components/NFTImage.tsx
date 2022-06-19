@@ -76,7 +76,7 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 		} catch (error: any) {
 			toast({
 				title: '發生錯誤',
-				description: error.message,
+				description: 'NFT已經被抽走！請重新整理頁面',
 				status: 'error',
 				duration: 9000,
 				isClosable: true,
