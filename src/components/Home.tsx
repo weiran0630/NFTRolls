@@ -31,7 +31,12 @@ export default function Home() {
 				<Container>
 					<Stack gap={10}>
 						<Flex alignItems='end' justifyContent='center' w='100%'>
-							<Box overflow='hidden' width={200} height={200}>
+							<Box
+								pointerEvents='none'
+								overflow='hidden'
+								width={200}
+								height={200}
+							>
 								<img src='/images/heading_icon.png' alt='rick-astley' />
 							</Box>
 
