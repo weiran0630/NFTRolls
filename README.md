@@ -23,6 +23,8 @@ To run the front-end application on a local development server:
 
 ```shell
 # Terminal tab 3
-vim .env      # Create your .env file with your own VITE_CONTENT_ID and VITE_CONTRACT_ADDRESS
+vim .env      # Create your .env file with your own VITE_CONTENT_ID and VITE_CONTRACT_ADDRESS.
+              # If needed, also VITE_FILE_EXTENSION of your preference.
+
 npm run dev   # start up the development server
 ```
