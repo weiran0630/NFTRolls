@@ -8,7 +8,7 @@ Clone the project:
 git clone https://github.com/weiran0630/NFTRolls.git
 ```
 
-To compile and serve the contract on a blockchain (Polygon testnet is used on this project), try running some of the following tasks:
+To compile and serve the contract on a local blockchain instance (Polygon testnet is used on this project btw):
 
 ```shell
 # Terminal tab 1
