@@ -51,7 +51,7 @@ export default function Home() {
 							</Heading>
 						</Flex>
 
-						<WalletBalance />
+						<WalletBalance onWalletConnected={getCount}/>
 					</Stack>
 				</Container>
 			</Center>

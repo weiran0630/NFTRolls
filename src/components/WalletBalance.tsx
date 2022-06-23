@@ -11,7 +11,12 @@ import {
 import { UpDownIcon, MinusIcon } from '@chakra-ui/icons';
 import { provider } from './Home';
 
-export default function WalletBalance() {
+interface WalletBalanceProps {
+	onWalletConnected: () => void;
+}
+export default function WalletBalance({
+	onWalletConnected,
+}: WalletBalanceProps) {
 	const [balance, setBalance] = useState<string>('');
 
 	const getBalance = async () => {
@@ -23,6 +28,7 @@ export default function WalletBalance() {
 			await provider.getBalance(account)
 		);
 		setBalance(balance);
+    onWalletConnected();
 	};
 
 	const handleButtonOnClick = () =>
@@ -41,6 +47,7 @@ export default function WalletBalance() {
 					pointerEvents='none'
 					placeholder='您的錢包餘額'
 					value={balance}
+					readOnly
 				></Input>
 
 				<InputRightElement w='max-content'>
