@@ -25,7 +25,7 @@ interface NFTImageProps {
 export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 	// pinata cid
 	const contentId = import.meta.env.VITE_CONTENT_ID;
-	const fileExtension = import.meta.env.VITE_FILE_EXTENSION;
+	const fileExtension = import.meta.env.VITE_FILE_EXTENSION || 'jpg';
 	const metadataURI = `${contentId}/${tokenId}.json`;
 	const imageURI = `/images/ricks/${tokenId}.${fileExtension}`;
 
@@ -76,7 +76,7 @@ export default function NFTImage({ tokenId, getCount }: NFTImageProps) {
 		} catch (error: any) {
 			const errorMsg = error.message as string;
 			const description = errorMsg.includes('NFT already minted!')
-				? 'NFT已被鍛造！'
+				? 'NFT已被鍛造！請重整頁面以顯示正確內容'
 				: '您的錢包餘額不足！';
 
 			toast({
