@@ -1,3 +1,5 @@
+<img width="567" alt="Screen Shot 2022-06-24 at 11 38 19" src="https://user-images.githubusercontent.com/64012303/175457300-5c90e73d-1348-48f8-8379-a18366dd9c50.png">
+
 # NFTRolls
 
 This project demonstrates a basic Web3 Dapp for minting NFTs. Mostly referring to the [Web3 Tutorial](https://github.com/fireship-io/web3-nft-dapp-tutorial) created by [@fireship-io](https://github.com/fireship-io), but with some great UI overhaul. It comes with an ERC721 contract, a test without actual testing (I'm too lazy for that), a script that deploys that contract, and a front-end application built with react and Chakra UI, which can mint some rick roll images.
