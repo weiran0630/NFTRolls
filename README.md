@@ -1,13 +1,13 @@
-<img width="567" alt="Screen Shot 2022-06-24 at 11 38 19" src="https://user-images.githubusercontent.com/64012303/175457300-5c90e73d-1348-48f8-8379-a18366dd9c50.png">
+<img width="567" alt="Screen Shot 2022-06-24 at 11 38 19" src="https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip">
 
 # NFTRolls
 
-This project demonstrates a basic Web3 Dapp for minting NFTs. Mostly referring to the [Web3 Tutorial](https://github.com/fireship-io/web3-nft-dapp-tutorial) created by [@fireship-io](https://github.com/fireship-io), but with some great UI overhaul. It comes with an ERC721 contract, a test without actual testing (I'm too lazy for that), a script that deploys that contract, and a front-end application built with react and Chakra UI, which can mint some rick roll images.
+This project demonstrates a basic Web3 Dapp for minting NFTs. Mostly referring to the [Web3 Tutorial](https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip) created by [@fireship-io](https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip), but with some great UI overhaul. It comes with an ERC721 contract, a test without actual testing (I'm too lazy for that), a script that deploys that contract, and a front-end application built with react and Chakra UI, which can mint some rick roll images.
 
 Clone the project:
 
 ```shell
-git clone https://github.com/weiran0630/NFTRolls.git
+git clone https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip
 ```
 
 To compile and serve the contract on a local blockchain instance (Polygon testnet is used on this project btw):
@@ -18,7 +18,7 @@ npx hardhat compile
 npx hardhat node
 
 # Terminal tab 2
-npx hardhat run scripts/sample-script.js --network localhost
+npx hardhat run https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip --network localhost
 ```
 
 To run the front-end application on a local development server:
